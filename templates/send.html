@@ -1,0 +1,42 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Filethrower{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">FileThrower</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="page-header">
+<h2>Simple file sender </h2>
+1. Upload a file </br>
+2. Send the link to a friend </br>
+<form action="" method=post enctype=multipart/form-data>
+      <p><input type=file name=file class = "form-control">
+         <button type="submit" class="btn btn-default" aria-label="Left Align">
+			<span class = "glyphicon glyphicon-upload" aria-hidden="true"></span>
+         </button>
+    </form>
+
+    </div>
+</div>
+{% endblock %}
